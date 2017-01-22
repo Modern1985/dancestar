@@ -56,7 +56,7 @@ class Person(AbstractUser):
     standart_level = models.CharField(max_length=30, blank=True)
     latin_level = models.CharField(max_length=30, blank=True)
 
-    tshirt_size = models.CharField(max_length=4, choices=TSHIRT_SIZE.choices(), default='')
+    tshirt_size = models.CharField(max_length=4, choices=TSHIRT_SIZE.choices())
 
 
 class Couple(models.Model):
